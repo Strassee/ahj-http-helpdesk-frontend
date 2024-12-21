@@ -1,0 +1,164 @@
+body {
+    background-color: #fce1d0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.app {
+    margin: auto;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+}
+
+.helpdesk {
+    width: 600px;
+    height: 60px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;   
+}
+
+.ticket {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #ececec;
+    margin: 3px 0px;
+    padding: 5px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 600px;
+    cursor: pointer;
+}
+
+.status {
+    width: 7%;
+}
+
+.ticketbody {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 83%;
+}
+
+.name {
+    width: 75%;
+}
+
+.description {
+    font-style: italic;
+}
+
+.created {
+    width: 25%;
+}
+
+.edit {
+    width: 5%;
+}
+
+.delete {
+    width: 5%;
+}
+
+/* формируем фон для модального окна */
+.modal {
+    display: none; /* скрыт по умолчанию */
+    /* темный фон при открытии модалки должен быть на всю страницу */
+    position: fixed; 
+    z-index: 999; /* поверх всех элементов */
+    left: 0;
+    top: 0;
+    width: 100vw; /* полная ширина */
+    height: 100vh; /* полная высота */
+    background-color: rgba(0,0,0,0.4); /* цвет фона - прозрачный черный */
+  }
+  
+  /* само модальное окно с контентом */
+.modal-content {
+    background-color: #fff;
+    /* окно будет находится по центру по горизонтали и с отступом сверху в 100 px */
+    margin: 100px auto; 
+    padding: 20px;
+    width: 30%; 
+    font-size: 18px;
+    /* разнесем текст и кнопоку по краям окна */
+    /* display: flex;
+    justify-content: space-between; */
+   }
+  
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+.modal-name {
+    /* resize: none; */
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 3px 3px; 
+}
+
+.modal-description {
+    resize: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 3px 3px; 
+    /* margin: 2px 0px;  */
+}
+
+.modal-title {
+    font-size: 21px;
+    text-align: center;
+}
+
+.modal-buttons {
+    text-align: right;
+}
+
+input[type="button"], input[type="submit"] {
+    margin: 2px 0px;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.modal-btn-ok {
+    background-color: #a7ffca;
+    border: 1px #00e75c solid;
+    cursor: pointer;
+}
+
+.modal-btn-cancel {
+    background-color: #ffa7a7;
+    border: 1px #e70000 solid;
+    cursor: pointer;
+}
+
+.addticket-btn {
+    background-color: #ececec;
+    border: 1px #cccccc solid;
+    margin: 2px 0px;
+    width: 76px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-message {
+    color: #ff0000;
+}
+
+.modal-question-delete {
+    color: #ff0000;
+}
