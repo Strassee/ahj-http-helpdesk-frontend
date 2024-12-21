@@ -1,3 +1,7 @@
+![CI](https://github.com/Strassee/ahj-http-helpdesk-frontend/actions/workflows/web.yml/badge.svg)
+
+[On github Pages](https://strassee.github.io/ahj-http-helpdesk-frontend/)
+
 # Домашнее задание к занятию "7. Работа с HTTP"
 
 Правила сдачи задания:
